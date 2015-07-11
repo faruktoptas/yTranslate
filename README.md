@@ -9,3 +9,7 @@ A Greasemonkey/Tampermonkey script that translates selected text inside the page
 
 # Usage
 Hold Alt key and select the text you want to translate.
+
+# Screenshot
+
+![yTranslate](https://github.com/faruktoptas/yTranslate/blob/master/screenshot.png?raw=true)
