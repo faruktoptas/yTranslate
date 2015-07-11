@@ -23,7 +23,7 @@ if (document.body) {
                 yTranslatePopupDiv = document.createElement('div');
             }
             yTranslatePopupDiv.id = 'yTranslatePopupDiv';
-            yTranslatePopupDiv.style.fontSize = "1.2em";
+            yTranslatePopupDiv.style.fontSize = "1.8em";
             yTranslatePopupDiv.style.color="#ffffff";
             yTranslatePopupDiv.style.textalign="left";
             yTranslatePopupDiv.style.right="20%";
