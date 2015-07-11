@@ -4,6 +4,7 @@ A Greasemonkey/Tampermonkey script that translates selected text inside the page
 # Installation
 - Install Greasemonkey/Tampermonkey
 - Create new user js and copy/paste contents of  yTranslate.user.js 
+- You can change API Key or translated language (English->Turkish default) optionally.
 - Enable script
 
 # Usage
