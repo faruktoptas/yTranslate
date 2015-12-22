@@ -73,5 +73,4 @@ if (document.body) {
         });
     };
     main();
-    //
 }
