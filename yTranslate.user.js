@@ -44,14 +44,24 @@ if (document.body) {
             yTranslatePopupDiv.innerHTML = text;
 
         }
+        
+         function jsonp(url, callback) {
+            var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
+             console.log("1");
+            window[callbackName] = function(data) {
+                delete window[callbackName];
+                document.body.removeChild(script);
+                callback(data);
+            };
 
-        function httpGet(theUrl)
-        {
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open('GET', theUrl, false);
-            xmlHttp.send(null);
-            parseJs(xmlHttp.responseText);
+            var script = document.createElement('script');
+             script.onerror = function(err){
+                 alert("This page does not allow to connect translate API!");
+             }
+            script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
+            document.body.appendChild(script);
         }
+        
         function parseJs(resp) {
             var result = JSON.parse(resp);
             if (result.code == 200) {
@@ -62,7 +72,9 @@ if (document.body) {
         document.addEventListener('mouseup', function (event) {
             selected = window.getSelection().toString();
             if (selected.length > 0 && event.altKey) {
-                httpGet(apiUrl + selected);
+                jsonp(apiUrl + selected, function(data) {
+                   parseJs(JSON.stringify(data));
+                });
             }
         });
         document.addEventListener("mousedown", function(event){

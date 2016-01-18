@@ -13,3 +13,6 @@ Hold Alt key and select the text you want to translate.
 # Screenshot
 
 ![yTranslate](https://github.com/faruktoptas/yTranslate/blob/master/screenshot.png?raw=true)
+
+# Note
+Some web sites blocks loading content from an unknown remote server due to their Content Security Policy. yTranslate will not work on these sites. Please know that this is not a bug.
