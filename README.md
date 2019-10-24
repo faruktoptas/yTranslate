@@ -1,4 +1,4 @@
-# yTranslate
+# yTranslate - [DEPRECATED - No longer being maintained]
 A Greasemonkey/Tampermonkey script that translates selected text inside the page with a tooltip via Yandex Translate.
 
 # Installation
