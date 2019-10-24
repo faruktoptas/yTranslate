@@ -1,4 +1,7 @@
 # yTranslate - [DEPRECATED - No longer being maintained]
+
+# PLASE USE THE CHROME EXTENSION [ytranslate-chrome-extension](https://github.com/faruktoptas/ytranslate-chrome-extension) 
+
 A Greasemonkey/Tampermonkey script that translates selected text inside the page with a tooltip via Yandex Translate.
 
 # Installation
